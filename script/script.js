@@ -63,6 +63,7 @@ function checkValidation(validInformation) {
 function clearForm(inputArray) {
     document.querySelector('.modalContainer').classList.add('hidden');
     getID('form').reset();
+    getID('signUp').disabled = true;
     inputArray.forEach(elem => {
         elem.isValid = false;
         getID(elem.inputId).classList.remove('is-valid');
