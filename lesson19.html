@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <title>Lesson19</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <h2>Please sign up</h2>
+                    <form class="row g-3 needs-validation" id="form" novalidate>
+                        <div class="mb-3 position-relative">
+
+                            <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                            <div class="invalid-tooltip">
+                                Please provide a valid First name.
+                            </div>
+                        </div>
+                        <div class="mb-3 position-relative">
+
+                            <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                            <div class="invalid-tooltip">
+                                Please provide a valid Last name.
+                            </div>
+                        </div>
+
+                        <div class="mb-3 position-relative">
+
+                            <input type="email" class="form-control" id="email" placeholder="Email addres" required>
+                            <div class="invalid-tooltip">
+                                Please provide a valid Email.
+                            </div>
+                        </div>
+                        <div class="mb-3 position-relative">
+
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            <div class="invalid-tooltip">
+                                Please provide a valid password.
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreement">
+                            <label class="form-check-label" for="exampleCheck1">I agree with Privasy Policy</label>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="signUp" disabled>Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="modalContainer hidden">
+            <div class="topModalPart"></div>
+            <div class="bottomModalPart">
+                <h2>Great!</h2>
+                <p>Your account has been created successfully.</p>
+                <button type="button" class="btn btn-warning" id="startExploring">Start Exploring</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
